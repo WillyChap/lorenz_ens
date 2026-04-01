@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lorenz-ens"
+version = "0.1.0"
+description = "Lorenz63 ensemble predictability experiment"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">= 3.9"
+authors = [
+    {name = "Your Name", email = "you@colorado.edu"},
+]
+dependencies = [
+    "numpy >= 1.22",
+    "matplotlib >= 3.5",
+]
+
+[project.scripts]
+run-lorenz = "lorenz_ens.run_lorenz_ensemble:main"
